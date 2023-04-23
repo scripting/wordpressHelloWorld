@@ -7,6 +7,7 @@ var config = {
 	username: undefined,
 	password: undefined,
 	};
+
 function readConfig (f, config, callback) {
 	fs.readFile (f, function (err, jsontext) {
 		if (!err) {
@@ -57,7 +58,6 @@ function newPost (client, title, content, callback) {
 		});
 	}
 
-
 readConfig ("config.json", config, function () {
 	console.log ("config == " + utils.jsonStringify (config));
 	
@@ -78,4 +78,3 @@ readConfig ("config.json", config, function () {
 			}
 		});
 	});
-
