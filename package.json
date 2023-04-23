@@ -1,0 +1,10 @@
+{
+	"name": "wordpresshelloworld",
+	"description": "A simple Node.js 'hello world' app for WordPress.",
+	"version": "0.4.0",
+	"main": "wordpresshelloworld.js",
+	"dependencies" : {
+		"wordpress": "*",
+		"daveutils": "*"
+		}
+	}
